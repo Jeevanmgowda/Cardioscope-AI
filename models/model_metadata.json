@@ -1,0 +1,215 @@
+{
+  "project_name": "Heart Disease Risk Prediction",
+  "training_timestamp": "2026-10-17T20:51:03.642147",
+  "random_state": 42,
+  "dataset": {
+    "source": "UCI Machine Learning Repository - Heart Disease (Cleveland)",
+    "total_instances": 303,
+    "train_instances": 242,
+    "test_instances": 61,
+    "feature_columns": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal"
+    ]
+  },
+  "feature_ranges": {
+    "age": {
+      "min": 18,
+      "max": 100,
+      "label": "Age (years)",
+      "unit": "years"
+    },
+    "sex": {
+      "allowed": [
+        0,
+        1
+      ],
+      "label": "Sex (0=Female, 1=Male)"
+    },
+    "cp": {
+      "allowed": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "Chest Pain Type (1-4)"
+    },
+    "trestbps": {
+      "min": 80,
+      "max": 240,
+      "label": "Resting Blood Pressure",
+      "unit": "mm Hg"
+    },
+    "chol": {
+      "min": 100,
+      "max": 600,
+      "label": "Serum Cholesterol",
+      "unit": "mg/dL"
+    },
+    "fbs": {
+      "allowed": [
+        0,
+        1
+      ],
+      "label": "Fasting Blood Sugar > 120 mg/dL (0=No, 1=Yes)"
+    },
+    "restecg": {
+      "allowed": [
+        0,
+        1,
+        2
+      ],
+      "label": "Resting ECG Results (0, 1, 2)"
+    },
+    "thalach": {
+      "min": 60,
+      "max": 220,
+      "label": "Maximum Heart Rate Achieved",
+      "unit": "bpm"
+    },
+    "exang": {
+      "allowed": [
+        0,
+        1
+      ],
+      "label": "Exercise Induced Angina (0=No, 1=Yes)"
+    },
+    "oldpeak": {
+      "min": 0.0,
+      "max": 10.0,
+      "label": "ST Depression (Oldpeak)",
+      "unit": "mm"
+    },
+    "slope": {
+      "allowed": [
+        1,
+        2,
+        3
+      ],
+      "label": "Peak Exercise ST Slope (1, 2, 3)"
+    },
+    "ca": {
+      "min": 0,
+      "max": 3,
+      "allowed": [
+        0,
+        1,
+        2,
+        3,
+        0.0,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "label": "Major Vessels Colored (0-3)"
+    },
+    "thal": {
+      "allowed": [
+        3.0,
+        6.0,
+        7.0,
+        3,
+        6,
+        7
+      ],
+      "label": "Thalassemia (3=Normal, 6=Fixed, 7=Reversible)"
+    }
+  },
+  "best_model": {
+    "name": "Logistic Regression",
+    "metrics": {
+      "accuracy": 0.8689,
+      "precision": 0.8125,
+      "recall": 0.9286,
+      "specificity": 0.8182,
+      "f1_score": 0.8667,
+      "roc_auc": 0.9621,
+      "pr_auc": 0.9499,
+      "true_negatives": 27,
+      "false_positives": 6,
+      "false_negatives": 2,
+      "true_positives": 26,
+      "model": "Logistic Regression",
+      "cv_roc_auc": 0.9054,
+      "cv_recall": 0.7743
+    }
+  },
+  "all_models_metrics": {
+    "Logistic Regression": {
+      "accuracy": 0.8689,
+      "precision": 0.8125,
+      "recall": 0.9286,
+      "specificity": 0.8182,
+      "f1_score": 0.8667,
+      "roc_auc": 0.9621,
+      "pr_auc": 0.9499,
+      "true_negatives": 27,
+      "false_positives": 6,
+      "false_negatives": 2,
+      "true_positives": 26,
+      "model": "Logistic Regression",
+      "cv_roc_auc": 0.9054,
+      "cv_recall": 0.7743
+    },
+    "Random Forest": {
+      "accuracy": 0.8689,
+      "precision": 0.8333,
+      "recall": 0.8929,
+      "specificity": 0.8485,
+      "f1_score": 0.8621,
+      "roc_auc": 0.9535,
+      "pr_auc": 0.9477,
+      "true_negatives": 28,
+      "false_positives": 5,
+      "false_negatives": 3,
+      "true_positives": 25,
+      "model": "Random Forest",
+      "cv_roc_auc": 0.8891,
+      "cv_recall": 0.7557
+    },
+    "Support Vector Machine": {
+      "accuracy": 0.8689,
+      "precision": 0.8125,
+      "recall": 0.9286,
+      "specificity": 0.8182,
+      "f1_score": 0.8667,
+      "roc_auc": 0.9578,
+      "pr_auc": 0.9374,
+      "true_negatives": 27,
+      "false_positives": 6,
+      "false_negatives": 2,
+      "true_positives": 26,
+      "model": "Support Vector Machine",
+      "cv_roc_auc": 0.8829,
+      "cv_recall": 0.7743
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.8852,
+      "precision": 0.8621,
+      "recall": 0.8929,
+      "specificity": 0.8788,
+      "f1_score": 0.8772,
+      "roc_auc": 0.9535,
+      "pr_auc": 0.9537,
+      "true_negatives": 29,
+      "false_positives": 4,
+      "false_negatives": 3,
+      "true_positives": 25,
+      "model": "Gradient Boosting",
+      "cv_roc_auc": 0.8551,
+      "cv_recall": 0.7838
+    }
+  }
+}

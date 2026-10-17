@@ -1,0 +1,5 @@
+model,accuracy,precision,recall,specificity,f1_score,roc_auc,pr_auc,true_negatives,false_positives,false_negatives,true_positives,cv_roc_auc,cv_recall
+Logistic Regression,0.8689,0.8125,0.9286,0.8182,0.8667,0.9621,0.9499,27,6,2,26,0.9054,0.7743
+Random Forest,0.8689,0.8333,0.8929,0.8485,0.8621,0.9535,0.9477,28,5,3,25,0.8891,0.7557
+Support Vector Machine,0.8689,0.8125,0.9286,0.8182,0.8667,0.9578,0.9374,27,6,2,26,0.8829,0.7743
+Gradient Boosting,0.8852,0.8621,0.8929,0.8788,0.8772,0.9535,0.9537,29,4,3,25,0.8551,0.7838
